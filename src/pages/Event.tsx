@@ -1,6 +1,4 @@
-import { gql, useQuery } from '@apollo/client'
 import { Header } from '../components/Header';
-import { Lesson } from '../components/Lesson';
 import { PlayerVideo } from '../components/PlayerVideo';
 import { Sidebar } from '../components/Sidebar';
 
@@ -14,8 +12,6 @@ export function Event() {
         <PlayerVideo />
         <Sidebar />
       </main>
-
-      <Lesson />
     </div>
   )
 }
