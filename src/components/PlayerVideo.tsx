@@ -10,6 +10,7 @@ query GetLessonBySlug ($slug: String) {
     title
     id
     description
+    videoId
     teacher {
       bio
       name
@@ -26,7 +27,7 @@ interface GetLessonBySlugReponse {
     description: string;
     teacher: {
       bio: string;
-      avartarURL: string;
+      avatarURL: string;
       name: string;
     }
   }
@@ -72,7 +73,7 @@ export function PlayerVideo({ lessonSlug }: PlayerVideoProps) {
             </p>
 
             <div className="flex items-center gap-4 mt-6">
-              <img className="h-16 w-16 rounded-full border-2 border-blue-500" src={data.lesson.teacher.avartarURL} alt="Avatar Teacher" />
+              <img className="h-16 w-16 rounded-full border-2 border-blue-500" src={data.lesson.teacher.avatarURL} alt="Avatar Teacher" />
 
               <div className="leading-relaxed">
                 <strong className="font-bold text-2xl block">{data.lesson.teacher.name}</strong>
