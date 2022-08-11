@@ -32,12 +32,12 @@ export function Subscribe() {
           <LogoIcon />
 
           <h1 className="mt-8 text-[2.5rem] leading-tight">
-            Construa uma <strong className="text-blue-500">aplicacao completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
+            Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">ReactJs</strong>
           </h1>
           <p className="mt-4 text-gray-200 leading-relaxed">Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.</p>
         </div>
         <div className="p-8 bg-gray-700 border border-gray-500 rounded">
-          <strong className="text-2xl mb-6 block">Inscrva-se gratuitamente</strong>
+          <strong className="text-2xl mb-6 block">Inscreva-se gratuítamente</strong>
 
           <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
             <input
